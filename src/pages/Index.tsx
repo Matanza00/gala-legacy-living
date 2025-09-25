@@ -3,6 +3,7 @@ import PromoBar from "@/components/PromoBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PatternBand from "@/components/PatternBand";
+import PatternLayer from "@/components/PatternLayer";
 import PerksCard from "@/components/PerksCard";
 import AmenitiesBand from "@/components/AmenitiesBand";
 import FloorPlansGrid from "@/components/FloorPlansGrid";

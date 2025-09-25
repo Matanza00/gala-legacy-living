@@ -116,6 +116,36 @@
 }
 
 @layer components {
+  /* Pattern Layer Utilities */
+  .site-pattern-layer {
+    @apply fixed inset-0 z-0 pointer-events-none;
+    background-image: url('/src/assets/marble-pattern.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+  }
+  
+  .pattern-overlay {
+    @apply absolute inset-0 bg-black/5 pointer-events-none;
+  }
+  
+  .content-over-pattern {
+    @apply relative z-10;
+  }
+  
+  .pattern-card {
+    @apply bg-card/95 backdrop-blur-sm shadow-elegant border border-border/50;
+  }
+  
+  /* Mobile pattern fallback */
+  @media (max-width: 1024px) {
+    .site-pattern-layer {
+      @apply absolute;
+      background-attachment: scroll;
+      transform: translateZ(0);
+    }
+  }
+
   /* Luxury button variants */
   .btn-luxury-gold {
     @apply bg-accent text-accent-foreground hover:bg-accent/90 font-semibold tracking-wider uppercase text-sm px-8 py-3 rounded-lg transition-all duration-300 shadow-elegant;
