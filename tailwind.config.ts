@@ -47,16 +47,27 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        luxury: {
+          gold: "hsl(var(--luxury-gold))",
+          "gold-light": "hsl(var(--luxury-gold-light))",
+          purple: "hsl(var(--luxury-purple))",
+          "purple-light": "hsl(var(--luxury-purple-light))",
+          marble: "hsl(var(--luxury-marble))",
+          "marble-dark": "hsl(var(--luxury-marble-dark))",
         },
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
+      },
+      backgroundImage: {
+        "gradient-marble": "var(--gradient-marble)",
+        "gradient-gold": "var(--gradient-gold)",
+        "gradient-purple": "var(--gradient-purple)",
+      },
+      boxShadow: {
+        luxury: "var(--shadow-luxury)",
+        elegant: "var(--shadow-elegant)",
       },
       borderRadius: {
         lg: "var(--radius)",
