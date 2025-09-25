@@ -1,0 +1,22 @@
+/* fallback: ensure background layer sits behind page content visually */
+
+/* mobile fallback */
+@media (max-width: 767px) {
+  .sticky-bg-layer { position: absolute !important; }
+}
+
+/* sticky bg base */
+.sticky-bg-layer { pointer-events: none; }
+
+/* overlay default: will be overwritten by JS per-section */
+.sticky-bg-overlay {
+  background-color: hsl(var(--luxury-purple) / 0.45);
+  mix-blend-mode: multiply;
+  will-change: background-color;
+}
+
+/* ensure sections used as sticky targets are above overlay (if you forget to add z-* in JSX) */
+[data-sticky-overlay-target] { z-index: 20; position: relative; }
+
+/* card readability */
+.card-luxury { background-color: hsl(var(--card) / 0.96); box-shadow: var(--shadow-elegant); }

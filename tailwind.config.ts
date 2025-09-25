@@ -62,6 +62,9 @@ export default {
       },
       backgroundImage: {
         "gradient-marble": "var(--gradient-marble)",
+        "gradient-marble-20": "linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), var(--gradient-marble)",
+        "gradient-marble-50": "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), var(--gradient-marble)",
+        "gradient-marble-80": "linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), var(--gradient-marble)",
         "gradient-gold": "var(--gradient-gold)",
         "gradient-purple": "var(--gradient-purple)",
       },

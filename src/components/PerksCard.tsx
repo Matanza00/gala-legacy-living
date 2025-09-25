@@ -1,10 +1,11 @@
+// src/components/PerksCard.tsx
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Sparkles } from "lucide-react";
 
 const PerksCard = () => {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto mb-2">
       <div className="card-luxury text-center">
         <div className="flex justify-center mb-6">
           <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center">

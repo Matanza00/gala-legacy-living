@@ -1,3 +1,4 @@
+// src/components/FloorPlansGrid.tsx
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Bed, Bath, Square } from "lucide-react";
